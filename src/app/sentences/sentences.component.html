@@ -1,0 +1,28 @@
+ <div class="row">
+    <h1 class="text-center">
+      CGM Sentence Manager
+    </h1>
+  </div>
+
+  <table>
+    <thead class="row">
+      <th class="col-md-3 text-center">
+        N
+      </th>
+      <th class="col-md-3 text-center">
+        S
+      </th>
+      <th class="col-md-3 text-center">
+        V
+      </th>
+      <th class="col-md-3 text-center">
+        O
+      </th>
+    </thead>
+    <tbody class="row">
+    <ng-container *ngFor="let sentence of sentences">
+        <app-sentence [data]="sentence"></app-sentence>
+    </ng-container>
+    </tbody>
+  </table>
+

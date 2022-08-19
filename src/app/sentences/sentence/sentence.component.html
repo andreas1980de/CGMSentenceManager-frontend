@@ -1,0 +1,16 @@
+<form [formGroup]="formGroup" >
+  <tr class="row">
+    <td class="col-3">
+      <input class="col-12 text-center" *ngIf="data?.n" type="text" formControlName="n" (ngModelChange)="sendValue()">
+    </td>
+    <td class="col-3">
+      <input class="col-12" *ngIf="data?.s" type="text" formControlName="s" (ngModelChange)="sendValue()">
+    </td>
+    <td class="col-3">
+      <input class="col-12" *ngIf="data?.v" type="text" formControlName="v" (ngModelChange)="sendValue()">
+    </td>
+    <td class="col-3">
+      <input class="col-12" *ngIf="data?.o" type="text" formControlName="o" (ngModelChange)="sendValue()">
+    </td>
+  </tr>
+</form>
